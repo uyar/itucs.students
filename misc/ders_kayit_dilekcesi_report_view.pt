@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+
+<metal:css fill-slot="style_slot">
+    <style type="text/css">
+    </style>
+</metal:css>
+
+<body>
+
+<metal:content-core fill-slot="content-core">
+    <metal:content-core define-macro="content-core">
+
+      <table class="listing">
+          <thead>
+              <tr>
+                  <th>Öğrenci No</th>
+                  <th>Ad Soyad</th>
+                  <th>Ders Kodu</th>
+                  <th>Ders Adı</th>
+                  <th>Son Değişiklik</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr tal:repeat="o python:context.listFolderContents(contentFilter={'portal_type': 'ders-kayit-dilekcesi'})">
+                <td><a tal:attributes="href o/absolute_url" tal:content="o/ogrenci_no">150150123</a></td>
+                <td tal:content="o/ad_soyad">Ali Veli</td>
+                <td tal:content="python: o.ders_kod_onek + o.ders_kod">BLG101</td>
+                <td tal:content="o/ders_ad">Veri Tabanı</td>
+                <td tal:content="o/modified">now</td>
+              </tr>
+          </tbody>
+      </table>
+      <button tal:attributes="onclick string:window.open('ders_kayit_dilekcesi_report_csv', 'blank', 'width=1000px,menubar=yes');">CSV</button>
+    </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>

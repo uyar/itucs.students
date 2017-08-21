@@ -1,0 +1,1 @@
+context.block_inherited_roles(context)
