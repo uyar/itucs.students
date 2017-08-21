@@ -1,0 +1,6 @@
+[report]
+include =
+    src/itucs/*
+omit =
+    */test*
+    */upgrades/*

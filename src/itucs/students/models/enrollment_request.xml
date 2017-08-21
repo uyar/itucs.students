@@ -1,0 +1,88 @@
+<model xmlns:form="http://namespaces.plone.org/supermodel/form"
+       xmlns:security="http://namespaces.plone.org/supermodel/security"
+       xmlns:marshal="http://namespaces.plone.org/supermodel/marshal"
+       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+       xmlns="http://namespaces.plone.org/supermodel/schema">
+  <schema>
+    <field name="student_no" type="zope.schema.TextLine">
+      <title>Student No</title>
+      <description/>
+      <max_length>9</max_length>
+      <min_length>9</min_length>
+    </field>
+    <field name="full_name" type="zope.schema.TextLine">
+      <title>Full Name</title>
+      <description/>
+    </field>
+    <field name="faculty" type="zope.schema.TextLine">
+      <title>Faculty</title>
+      <description>For other faculties, change the text below.</description>
+      <default>Faculty of Computer and Informatics</default>
+    </field>
+    <field name="department" type="zope.schema.Choice">
+      <title>Department</title>
+      <description/>
+      <values>
+        <element>Computer Eng. (100% Eng.)</element>
+        <element>Computer Eng. (30% Eng.)</element>
+        <element>Information Systems Eng. (SUNY)</element>
+        <element>Other (specify below)</element>
+      </values>
+    </field>
+    <field name="department_other" type="zope.schema.TextLine">
+      <title>Department (Other)</title>
+      <description>If your department is not listed above, write it here.</description>
+      <required>False</required>
+    </field>
+    <field name="phone" type="zope.schema.TextLine">
+      <title>Contact Phone</title>
+      <description>If you like, you can leave this field blank here and fill it manually on the printed form.</description>
+      <required>False</required>
+    </field>
+    <field name="e_mail" type="zope.schema.TextLine">
+      <title>E-mail address</title>
+      <description/>
+      <required>False</required>
+    </field>
+    <field name="submission_date" type="zope.schema.Date">
+      <title>Date</title>
+      <description/>
+    </field>
+    <field name="course_prefix" type="zope.schema.Choice">
+      <title>Course Code Prefix</title>
+      <description>The course group part of the course code. For example, if the course code is "BLG123", select "BLG" here. IF THE COURSE CODE PREFIX IS NOT LISTED BELOW, YOU ONLY HAVE TO HAND IN THE PRINTED FORM, YOU DON'T NEED TO SUBMIT THIS FORM.</description>
+      <values>
+        <element>BLG</element>
+        <element>ISE</element>
+        <element>BIL</element>
+        <element>MAT</element>
+        <element>EHB</element>
+        <element>KON</element>
+        <element>HUK</element>
+      </values>
+    </field>
+    <field name="course_no" type="zope.schema.TextLine">
+      <title>Course Code No</title>
+      <description>The course number part of the course code. For example, if the course code is "BLG123", type "123" here.</description>
+      <min_length>3</min_length>
+      <max_length>6</max_length>
+    </field>
+    <field name="course_title" type="zope.schema.TextLine">
+      <title>Course Title</title>
+      <description/>
+    </field>
+    <!-- field name="gun_ve_saat" type="zope.schema.TextLine">
+      <description/>
+      <title>G&amp;#252;n ve Saat</title>
+    </field>
+    <field name="ders2" type="zope.schema.TextLine">
+      <description>Varsa 2. se&amp;#231;enek dersin kodu, ad&amp;#305;, g&amp;#252;n&amp;#252; ve saati. Sadece yukar&amp;#305;daki ders kabul edilmezse de&amp;#287;erlendirilecektir.</description>
+      <required>False</required>
+      <title>Di&amp;#287;er Se&amp;#231;enek</title>
+    </field>
+    <field name="gerekce" type="zope.schema.Text">
+      <description/>
+      <title>Gerek&amp;#231;e</title>
+    </field -->
+  </schema>
+</model>
