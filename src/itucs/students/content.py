@@ -5,6 +5,10 @@ class EnrollmentRequest(Item):
 
     __ac_local_roles_block__ = True
 
+    def __init__(self, *args, **kwargs):
+        super(EnrollmentRequest, self).__init__(*args, **kwargs)
+        self.manage_setLocalRoles('uyar', ['Reader', 'Reviewer'])
+
 
 def updateTitle(enrollment_request, event):
     student_no = enrollment_request.student_no
