@@ -22,3 +22,7 @@ def updateTitle(enrollment_request, event):
 
 class EnrollmentRequestView(BrowserView):
     """Default view for an enrollment request."""
+
+
+class EnrollmentRequestPrintableView(BrowserView):
+    """Printable view for an enrollment request."""

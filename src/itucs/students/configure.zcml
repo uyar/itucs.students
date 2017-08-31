@@ -43,6 +43,14 @@
       permission="zope2.View"
       />
 
+  <browser:page
+      name="printable_view"
+      for="itucs.students.interfaces.IEnrollmentRequest"
+      class="itucs.students.content.EnrollmentRequestPrintableView"
+      template="templates/enrollment_request_print.pt"
+      permission="zope2.View"
+      />
+
   <subscriber
       for=".content.EnrollmentRequest
            zope.lifecycleevent.interfaces.IObjectAddedEvent"

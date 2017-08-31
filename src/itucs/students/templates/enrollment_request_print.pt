@@ -3,16 +3,18 @@
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       lang="en"
-      metal:use-macro="context/main_template/macros/master"
       i18n:domain="itucs.students">
 
-<metal:css fill-slot="style_slot">
     <style type="text/css">
-        div.alert {
-            background-color: #b00000;
-            color: #ffffff;
-            margin-bottom: 1em;
-            padding: 1em;
+        @page {
+            size: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        body {
+            font-family: Times New Roman, serif;
+            font-size: 10pt;
+            margin-top: 4em;
         }
         h1.petition {
             text-align: center;
@@ -43,15 +45,8 @@
             height: 5em;
         }
     </style>
-</metal:css>
 
 <body>
-
-<metal:main fill-slot="main">
-    <tal:main-macro metal:define-macro="main">
-        <div class="alert">
-            Lütfen formu dikkatlice kontrol ederek bilgilerin doğruluğundan emin olduktan sonra en alttaki "Basılabilir belge" bağlantısını izleyin ve gelen sayfanın çıktısını alın. BU ÇIKTIYI İMZALAYARAK İSTENEN EKLERLE BİRLİKTE ÖĞRENCİ İŞLERİ'NE TESLİM ETMENİZ GEREKMEKTEDİR, YALNIZCA ELEKTRONİK OLARAK DOLDURULAN FORMLAR BAŞVURU İÇİN YETERLİ DEĞİLDİR.
-        </div>
 
         <h1 class="petition">
             İTÜ Bilgisayar ve Bilişim Fakültesi Dekanlığına,
@@ -143,14 +138,6 @@
           <li>Fakülte web sayfasında duyurulan başvuru koşullarını mutlaka okuyunuz. Kurallara aykırı talepler değerlendirilmeye alınmayacaktır. <a href="http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi">http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi</a></li>
           <li>Derslerin kontenjanlarını belli bir sayının üstüne çıkarmak fiziksel olarak mümkün olmadığından başvuru koşulları sağlansa da her dilekçeyi kabul etmek mümkün olmamaktadır. Bu nedenle <strong>öğrencilerin öncelikle programlarını uygun dersleri alabilecek şekilde düzenlemeleri önerilir</strong>.</li>
         </ol>
-
-        <div class="alert">
-            Formdaki bilgilerde değişiklik yapmak isterseniz yukarıdaki yeşil çubuktan "Düzenle" işlemini seçebilirsiniz. Siteye girmiş durumdayken "Dilekçeler" klasörüne baktığınızda kendi dilekçelerinizi görebilirsiniz.
-        </div>
-
-        <button tal:attributes="onclick python:'window.open(\'' + context.id + '/printable_view\', \'blank\', \'width=1000px,menubar=yes\')'">Printable page</button>
-    </tal:main-macro>
-</metal:main>
 
 </body>
 </html>
