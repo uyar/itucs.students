@@ -71,18 +71,18 @@
       <title>Course Title</title>
       <description/>
     </field>
-    <!-- field name="gun_ve_saat" type="zope.schema.TextLine">
-      <description/>
-      <title>G&amp;#252;n ve Saat</title>
+    <field name="week_slot" type="zope.schema.TextLine">
+      <title>Course Time Slot</title>
+      <description>The day of the week and the hours of the course.</description>
     </field>
-    <field name="ders2" type="zope.schema.TextLine">
-      <description>Varsa 2. se&amp;#231;enek dersin kodu, ad&amp;#305;, g&amp;#252;n&amp;#252; ve saati. Sadece yukar&amp;#305;daki ders kabul edilmezse de&amp;#287;erlendirilecektir.</description>
+    <field name="alternative" type="zope.schema.TextLine">
+      <title>Alternative Course</title>
+      <description>The code, title and time slot of an alternative course that you can take. This will be considered only if the request for the first course is not accepted.</description>
       <required>False</required>
-      <title>Di&amp;#287;er Se&amp;#231;enek</title>
     </field>
-    <field name="gerekce" type="zope.schema.Text">
-      <description/>
-      <title>Gerek&amp;#231;e</title>
-    </field -->
+    <field name="explanation" type="zope.schema.Text">
+      <title>Explanation</title>
+      <description>Explain why you need to enroll in this course.</description>
+    </field>
   </schema>
 </model>
