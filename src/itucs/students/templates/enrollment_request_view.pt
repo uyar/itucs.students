@@ -53,6 +53,13 @@
             Lütfen formu dikkatlice kontrol ederek bilgilerin doğruluğundan emin olduktan sonra en alttaki "Basılabilir belge" bağlantısını izleyin ve gelen sayfanın çıktısını alın. BU ÇIKTIYI İMZALAYARAK İSTENEN EKLERLE BİRLİKTE ÖĞRENCİ İŞLERİ'NE TESLİM ETMENİZ GEREKMEKTEDİR, YALNIZCA ELEKTRONİK OLARAK DOLDURULAN FORMLAR BAŞVURU İÇİN YETERLİ DEĞİLDİR.
         </div>
 
+        <div style="float: right;">
+            <img src="antet.jpg"
+                 tal:define="navroot context/@@plone_portal_state/navigation_root_url"
+                 tal:attributes="src string:${navroot}/++resource++itucs.students/antet.jpg"
+                 style="width: 78px; height: 106px;" />
+        </div>
+
         <h1 class="petition">
             İTÜ Bilgisayar ve Bilişim Fakültesi Dekanlığına,
         </h1>

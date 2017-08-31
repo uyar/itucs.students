@@ -29,7 +29,6 @@
       post_handler=".setuphandlers.uninstall"
       />
 
-
   <utility
       factory=".setuphandlers.HiddenProfiles"
       name="itucs.students-hiddenprofiles"
