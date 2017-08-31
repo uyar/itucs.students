@@ -3,7 +3,7 @@ from plone import api
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
 from plone.dexterity.interfaces import IDexterityFTI
-from itucs.students.interfaces import IEnrollment_Request
+from itucs.students.interfaces import IEnrollmentRequest
 from itucs.students.testing import ITUCS_STUDENTS_INTEGRATION_TESTING  # noqa
 from zope.component import createObject
 from zope.component import queryUtility
@@ -24,7 +24,7 @@ class Enrollment_RequestIntegrationTest(unittest.TestCase):
     def test_schema(self):
         fti = queryUtility(IDexterityFTI, name='Enrollment_Request')
         schema = fti.lookupSchema()
-        self.assertEqual(IEnrollment_Request, schema)
+        self.assertEqual(IEnrollmentRequest, schema)
 
     def test_fti(self):
         fti = queryUtility(IDexterityFTI, name='Enrollment_Request')
@@ -34,7 +34,7 @@ class Enrollment_RequestIntegrationTest(unittest.TestCase):
         fti = queryUtility(IDexterityFTI, name='Enrollment_Request')
         factory = fti.factory
         obj = createObject(factory)
-        self.assertTrue(IEnrollment_Request.providedBy(obj))
+        self.assertTrue(IEnrollmentRequest.providedBy(obj))
 
     def test_adding(self):
         obj = api.content.create(
@@ -42,4 +42,4 @@ class Enrollment_RequestIntegrationTest(unittest.TestCase):
             type='Enrollment_Request',
             id='Enrollment_Request',
         )
-        self.assertTrue(IEnrollment_Request.providedBy(obj))
+        self.assertTrue(IEnrollmentRequest.providedBy(obj))

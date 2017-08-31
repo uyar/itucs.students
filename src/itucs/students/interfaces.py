@@ -11,7 +11,7 @@ class IItucsStudentsLayer(IDefaultBrowserLayer):
     """Marker interface that defines a browser layer."""
 
 
-class IEnrollment_Request(model.Schema):
+class IEnrollmentRequest(model.Schema):
     """Schema for Enrollment Request content type."""
 
     model.load('models/enrollment_request.xml')

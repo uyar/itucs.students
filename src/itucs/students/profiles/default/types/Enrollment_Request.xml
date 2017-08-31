@@ -30,7 +30,7 @@
   <property name="klass">plone.dexterity.content.Item</property>
   <property name="model_file"></property>
   <property name="model_source"></property>
-  <property name="schema">itucs.students.interfaces.IEnrollment_Request</property>
+  <property name="schema">itucs.students.interfaces.IEnrollmentRequest</property>
 
   <!-- Enabled behaviors -->
   <property name="behaviors">
