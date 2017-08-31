@@ -10,7 +10,6 @@
 
   <include package=".browser" />
 
-
   <genericsetup:registerProfile
       name="default"
       title="itucs.students"
@@ -32,6 +31,19 @@
 
   <utility
       factory=".setuphandlers.HiddenProfiles"
-      name="itucs.students-hiddenprofiles" />
+      name="itucs.students-hiddenprofiles"
+      />
+
+  <subscriber
+      for=".content.EnrollmentRequest
+           zope.lifecycleevent.interfaces.IObjectAddedEvent"
+      handler=".content.updateTitle"
+      />
+
+  <subscriber
+      for=".content.EnrollmentRequest
+           zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+      handler=".content.updateTitle"
+      />
 
 </configure>
