@@ -1,3 +1,4 @@
+from Products.Five import BrowserView
 from plone.dexterity.content import Item
 
 
@@ -17,3 +18,7 @@ def updateTitle(enrollment_request, event):
     title = u"%s - %s%s" % (student_no, course_prefix, course_no)
     enrollment_request.title = title
     enrollment_request.setTitle(title)
+
+
+class EnrollmentRequestView(BrowserView):
+    """Default view for an enrollment request."""

@@ -1,0 +1,155 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="itucs.students">
+
+<metal:css fill-slot="style_slot">
+    <style type="text/css">
+        div.alert {
+            background-color: #b00000;
+            color: #ffffff;
+            margin-bottom: 1em;
+            padding: 1em;
+        }
+        h1.petition {
+            text-align: center;
+        }
+        table.petition {
+            border-collapse: collapse;
+        }
+        table.petition tr.heading {
+            background-color: #D0D0D0;
+            font-weight: bold;
+            text-align: center;
+        }
+        table.petition td, table.petition th {
+            border: thin solid black;
+            padding: 0.4em;
+            vertical-align: top;
+        }
+        table.petition th {
+            font-weight: bold;
+        }
+        table.petition td.signature {
+            height: 4em;
+        }
+        table.petition td.explanation {
+            height: 6em;
+        }
+        table.petition td.evaluation {
+            height: 5em;
+        }
+    </style>
+</metal:css>
+
+<body>
+
+<metal:main fill-slot="main">
+    <tal:main-macro metal:define-macro="main">
+        <div class="alert">
+            Lütfen formu dikkatlice kontrol ederek bilgilerin doğruluğundan emin olduktan sonra en alttaki "Basılabilir belge" bağlantısını izleyin ve gelen sayfanın çıktısını alın. BU ÇIKTIYI İMZALAYARAK İSTENEN EKLERLE BİRLİKTE ÖĞRENCİ İŞLERİ'NE TESLİM ETMENİZ GEREKMEKTEDİR, YALNIZCA ELEKTRONİK OLARAK DOLDURULAN FORMLAR BAŞVURU İÇİN YETERLİ DEĞİLDİR.
+        </div>
+
+        <h1 class="petition">
+            İTÜ Bilgisayar ve Bilişim Fakültesi Dekanlığına,
+        </h1>
+
+        <p>
+            Aşağıda ayrıntılı bilgileri verilen derse, belirttiğim nedenden dolayı kayıt olamadım.<br />
+            Fakülte web sayfasında duyurulan başvuru koşullarını sağlıyorum.<br />
+            Bu derse kaydedilebilmem için gerekenin yapılmasını saygılarımla arz ederim.
+        </p>
+
+        <p style="margin-bottom: 2em;">
+          Ek1. Not döküm belgesi (transkript)<br /> 
+          Ek2. Haftalık ders çizelgesi
+        </p>
+
+        <table class="petition">
+            <tr class="heading">
+                <td colspan="2">STUDENT INFORMATION</td>
+            </tr>
+            <tr>
+                <th>Student No:</th>
+                <td tal:content="context/student_no">150160001</td>
+            </tr>
+            <tr>
+                <th>Full Name:</th>
+                <td tal:content="context/full_name">Alan Turing</td>
+            </tr>
+            <tr>
+                <th>Faculty:</th>
+                <td tal:content="context/faculty">Computer and Informatics</td>
+            </tr>
+            <tr>
+                <th>Department:</th>
+                <td tal:content="python: context.department_other or context.department">Computer Eng.</td>
+            </tr>
+            <tr>
+                <th>Contact Phone:</th>
+                <td tal:content="context/phone">0555 1234567</td>
+            </tr>
+            <tr>
+                <th>E-mail:</th>
+                <td tal:content="context/e_mail">turing@itu.edu.tr</td>
+            </tr>
+            <tr>
+                <th>Date:</th>
+                <td tal:content="python:context.submission_date">1970-01-01</td>
+            </tr>
+            <tr>
+                <th>Signature:</th>
+                <td class="signature"></td>
+            </tr>
+            <tr class="heading">
+                <td colspan="2">COURSE INFORMATION</td>
+            </tr>
+            <tr>
+                <th>Course Code and Title:</th>
+                <td tal:content="python: context.course_prefix + context.course_no + ' - ' + context.course_title">BIL105 - C</td>
+            </tr>
+            <tr>
+                <th>Course Time Slot:</th>
+                <td tal:content="context/week_slot">Monday 09:30-12:30</td>
+            </tr>
+            <tr>
+                <th>Code, Title and Time Slot for Alternative Course::<br />
+                    <span style="font-weight: normal; font-size: 80%;">This will be considered only if the request for the first course is not accepted.</span></th>
+                <td tal:content="context/alternative">BIL108 Matlab Monday 09:30-12:30</td>
+            </tr>
+            <tr>
+                <th>Explanation:</th>
+                <td class="explanation" tal:content="context/explanation">Martyrdom</td>
+            </tr>
+            <tr class="heading">
+                <td colspan="2">
+                    EVALUATION<br />
+                    (TO BE FILLED OUT BY THE FACULTY)</td>
+            </tr>
+            <tr>
+                <th>Faculty/Department Evaluation:</th>
+                <td class="evaluation"></td>
+            </tr>
+        </table>
+
+        <h2 class="petition">Notlar</h2>
+        <ol>
+          <li>İmzasız ve eksik bilgili dilekçeler <strong>GEÇERSİZDİR</strong>.</li>
+          <li>Kaydolunmak istenilen her ders için <strong>AYRI DİLEKÇE</strong> düzenlenmelidir.</li>
+          <li>Dilekçe ile başvuruda bulunmadan önce <a href="http://www.sis.itu.edu.tr/">http://www.sis.itu.edu.tr/</a> adresindeki duyuruları ve yönetmelikleri mutlaka okuyunuz. Kurallara aykırı talepler değerlendirilmeye alınmayacaktır.</li>
+          <li>Fakülte web sayfasında duyurulan başvuru koşullarını mutlaka okuyunuz. Kurallara aykırı talepler değerlendirilmeye alınmayacaktır. <a href="http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi">http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi</a></li>
+          <li>Derslerin kontenjanlarını belli bir sayının üstüne çıkarmak fiziksel olarak mümkün olmadığından başvuru koşulları sağlansa da her dilekçeyi kabul etmek mümkün olmamaktadır. Bu nedenle <strong>öğrencilerin öncelikle programlarını uygun dersleri alabilecek şekilde düzenlemeleri önerilir</strong>.</li>
+        </ol>
+
+        <div class="alert">
+            Formdaki bilgilerde değişiklik yapmak isterseniz yukarıdaki yeşil çubuktan "Düzenle" işlemini seçebilirsiniz. Siteye girmiş durumdayken "Dilekçeler" klasörüne baktığınızda kendi dilekçelerinizi görebilirsiniz.
+        </div>
+
+    </tal:main-macro>
+</metal:main>
+
+</body>
+</html>
