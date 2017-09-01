@@ -24,7 +24,7 @@ msgstr ""
 
 #: ./models/enrollment_request.xml
 msgid "Alternative Course"
-msgstr ""
+msgstr "İkinci Seçenek"
 
 #: ./templates/enrollment_request_view.pt:150
 msgid "Before applying for course enrollment, make sure that you have carefully read the announcements and guidelines on the <a href=\"http://www.sis.itu.edu.tr/\">http://www.sis.itu.edu.tr/</a> site. The requests that fail to follow the rules will not be evaluated."
@@ -33,113 +33,113 @@ msgstr ""
 #: ./templates/enrollment_request_print.pt:120
 #: ./templates/enrollment_request_view.pt:126
 msgid "Code, Title and Time Slot for Alternative Course"
-msgstr ""
+msgstr "İkinci Dersin Kodu, Adı ve Zaman Dilimi"
 
 #: ./models/enrollment_request.xml
 msgid "Computer Eng. (100% Eng.)"
-msgstr ""
+msgstr "Bilgisayar Müh. (%100 İng.)"
 
 #: ./models/enrollment_request.xml
 msgid "Computer Eng. (30% Eng.)"
-msgstr ""
+msgstr "Bilgisayar Müh. (%30% İng.)"
 
 #: ./models/enrollment_request.xml
 #: ./templates/enrollment_request_print.pt:93
 #: ./templates/enrollment_request_view.pt:99
 msgid "Contact Phone"
-msgstr ""
+msgstr "İletişim Telefonu"
 
 #: ./models/enrollment_request.xml
 msgid "Course Code No"
-msgstr ""
+msgstr "Dersin Kod Numarası"
 
 #: ./models/enrollment_request.xml
 msgid "Course Code Prefix"
-msgstr ""
+msgstr "Dersin Kod Öneki"
 
 #: ./templates/enrollment_request_print.pt:112
 #: ./templates/enrollment_request_view.pt:118
 msgid "Course Code and Title"
-msgstr ""
+msgstr "Dersin Kodu ve Adı"
 
 #: ./models/enrollment_request.xml
 #: ./templates/enrollment_request_print.pt:116
 #: ./templates/enrollment_request_view.pt:122
 msgid "Course Time Slot"
-msgstr ""
+msgstr "Dersin Zaman Dilimi"
 
 #: ./models/enrollment_request.xml
 msgid "Course Title"
-msgstr ""
+msgstr "Dersin Adı"
 
 #: ./models/enrollment_request.xml
 #: ./templates/enrollment_request_print.pt:101
 #: ./templates/enrollment_request_view.pt:107
 msgid "Date"
-msgstr ""
+msgstr "Tarih"
 
 #: ./models/enrollment_request.xml
 #: ./templates/enrollment_request_print.pt:89
 #: ./templates/enrollment_request_view.pt:95
 msgid "Department"
-msgstr ""
+msgstr "Bölümü"
 
 #: ./models/enrollment_request.xml
 msgid "Department (Other)"
-msgstr ""
+msgstr "Bölümü (Diğer)"
 
 #: ./templates/enrollment_request_print.pt:97
 #: ./templates/enrollment_request_view.pt:103
 msgid "E-mail"
-msgstr ""
+msgstr "E-posta"
 
 #: ./models/enrollment_request.xml
 msgid "E-mail address"
-msgstr ""
+msgstr "E-posta adresi"
 
 #: ./templates/enrollment_request_print.pt:129
 #: ./templates/enrollment_request_view.pt:135
 msgid "EVALUATION<br /> (TO BE FILLED OUT BY THE FACULTY REVIEWERS)"
-msgstr ""
+msgstr "DEĞERLENDİRME<br /> (FAKÜLTE TARAFINDAN DOLDURULACAKTIR)"
 
 #: ./profiles/default/types/Enrollment_Request.xml
 msgid "Enrollment Request"
-msgstr ""
+msgstr "Kayıt Dilekçesi"
 
 #: ./models/enrollment_request.xml
 msgid "Explain why you need to enroll in this course."
-msgstr ""
+msgstr "Bu derse neden kayıt olmanız gerektiğini açıklayın."
 
 #: ./models/enrollment_request.xml
 #: ./templates/enrollment_request_print.pt:125
 #: ./templates/enrollment_request_view.pt:131
 msgid "Explanation"
-msgstr ""
+msgstr "Açıklama"
 
 #: ./models/enrollment_request.xml
 #: ./templates/enrollment_request_print.pt:85
 #: ./templates/enrollment_request_view.pt:91
 msgid "Faculty"
-msgstr ""
+msgstr "Fakültesi"
 
 #: ./models/enrollment_request.xml
 msgid "Faculty of Computer and Informatics"
-msgstr ""
+msgstr "Bilgisayar ve Bilişim Fakültesi"
 
 #: ./templates/enrollment_request_print.pt:135
 #: ./templates/enrollment_request_view.pt:141
 msgid "Faculty/Department Evaluation"
-msgstr ""
+msgstr "Fakülte/Bölüm Görüşü"
 
 #: ./models/enrollment_request.xml
 msgid "For other faculties, change the text below."
-msgstr ""
+msgstr "Diğer fakülteler için aşağıdaki yazıyı değiştirin."
 
 #: ./models/enrollment_request.xml
 #: ./templates/enrollment_request_print.pt:81
 #: ./templates/enrollment_request_view.pt:87
 msgid "Full Name"
-msgstr ""
+msgstr "Adı Soyadı"
 
 #: ./templates/enrollment_request_print.pt:61
 #: ./templates/enrollment_request_view.pt:67
@@ -156,11 +156,11 @@ msgstr ""
 
 #: ./models/enrollment_request.xml
 msgid "If your department is not listed above, write it here."
-msgstr ""
+msgstr "Bölümünüz yukarıdaki seçeneklerden biri değilse buraya yazın."
 
 #: ./models/enrollment_request.xml
 msgid "Information Systems Eng. (SUNY)"
-msgstr ""
+msgstr "Bilişim Sistemleri Müh. (SUNY)"
 
 #: ./configure.zcml:21
 msgid "Installs the itucs.students add-on."
@@ -168,11 +168,11 @@ msgstr ""
 
 #: ./templates/enrollment_request_view.pt:146
 msgid "Notes"
-msgstr ""
+msgstr "Notlar"
 
 #: ./models/enrollment_request.xml
 msgid "Other (specify below)"
-msgstr ""
+msgstr "Diğer (aşağıda belirtin)"
 
 #: ./templates/enrollment_request_view.pt:52
 msgid "Please check the form thoroughly to make sure that the provided information is correct. Click the \"printable page\" button at the bottom of the form and print out the displayed page. SIGN THE PRINTED FORM AND HAND IT IN AT THE STUDENTS AFFAIRS OFFICE. FORMS THAT ARE SUBMITTED ONLY ELECTRONICALLY ARE NOT SUFFICIENT FOR EVALUATION."
@@ -180,11 +180,11 @@ msgstr ""
 
 #: ./templates/enrollment_request_view.pt:159
 msgid "Printable page"
-msgstr ""
+msgstr "Basılabilir belge"
 
 #: ./profiles/default/types/Enrollment_Request.xml
 msgid "Request form for students to enroll in fully-booked courses. After this form is filled out through the web site, it has to be printed out, signed and handed in within the announced time frame at the Students Affairs Office of the Faculty of Computer and Informatics, along with the student's transcript and weekly course schedule."
-msgstr ""
+msgstr "Öğrencilerin kontenjanı dolan derslere kayıt olmak için verdikleri dilekçe. Bu dilekçe web üzerinden doldurulduktan sonra çıkışı alınarak imzalanmalı, not döküm belgesi (transkript) ve haftalık ders çizelgesi ile birlikte duyurularda belirtilen tarihler arasında Bilgisayar ve Bilişim Fakültesi Öğrenci İşleri Bürosuna teslim edilmelidir."
 
 #: ./templates/enrollment_request_view.pt:148
 msgid "Request forms which are unsigned or which have missing information <strong>WILL NOT BE EVALUATED</strong>."
@@ -193,12 +193,12 @@ msgstr ""
 #: ./templates/enrollment_request_print.pt:74
 #: ./templates/enrollment_request_view.pt:80
 msgid "STUDENT INFORMATION"
-msgstr ""
+msgstr "ÖĞRENCİ BİLGİLERİ"
 
 #: ./templates/enrollment_request_print.pt:105
 #: ./templates/enrollment_request_view.pt:111
 msgid "Signature"
-msgstr ""
+msgstr "İmza"
 
 #: ./templates/enrollment_request_view.pt:152
 msgid "Since it's physically not possible to increase the number of students enrolled in a course, not every enrollment request can be accepted even if the application rules are met. Therefore, <strong>students are advised to arrange their schedule so that they can take the available courses.</strong>."
@@ -208,7 +208,7 @@ msgstr ""
 #: ./templates/enrollment_request_print.pt:77
 #: ./templates/enrollment_request_view.pt:83
 msgid "Student No"
-msgstr ""
+msgstr "Öğrenci No"
 
 #: ./models/enrollment_request.xml
 msgid "The code, title and time slot of an alternative course that you can take. This will be considered only if the request for the first course is not accepted."
@@ -224,7 +224,7 @@ msgstr ""
 
 #: ./models/enrollment_request.xml
 msgid "The day of the week and the hours of the course."
-msgstr ""
+msgstr "Dersin yapıldığı gün ve saatler."
 
 #: ./templates/enrollment_request_print.pt:121
 #: ./templates/enrollment_request_view.pt:127
@@ -234,7 +234,7 @@ msgstr ""
 #: ./templates/enrollment_request_print.pt:57
 #: ./templates/enrollment_request_view.pt:63
 msgid "To the Faculty of Computer and Informatics,"
-msgstr ""
+msgstr "Bilgisayar ve Bilişim Fakültesi Dekanlığına"
 
 #: ./configure.zcml:30
 msgid "Uninstalls the itucs.students add-on."
@@ -243,7 +243,7 @@ msgstr ""
 #. Default: "View"
 #: ./profiles/default/types/Enrollment_Request.xml
 msgid "description"
-msgstr ""
+msgstr "Bak"
 
 #: ./configure.zcml:21
 msgid "itucs.students"
