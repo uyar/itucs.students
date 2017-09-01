@@ -11,7 +11,7 @@
       name="title">Enrollment Request</property>
   <property
       i18n:translate=""
-      name="description"></property>
+      name="description">Request form for students to enroll in fully-booked courses.</property>
 
   <property name="allow_discussion">False</property>
   <property name="factory">Enrollment_Request</property>

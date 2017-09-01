@@ -2,55 +2,56 @@
        xmlns:security="http://namespaces.plone.org/supermodel/security"
        xmlns:marshal="http://namespaces.plone.org/supermodel/marshal"
        xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+       i18n:domain="itucs.students"
        xmlns="http://namespaces.plone.org/supermodel/schema">
   <schema>
     <field name="student_no" type="zope.schema.TextLine">
-      <title>Student No</title>
+      <title i18n:translate="">Student No</title>
       <description/>
       <max_length>9</max_length>
       <min_length>9</min_length>
     </field>
     <field name="full_name" type="zope.schema.TextLine">
-      <title>Full Name</title>
+      <title i18n:translate="">Full Name</title>
       <description/>
     </field>
     <field name="faculty" type="zope.schema.TextLine">
-      <title>Faculty</title>
-      <description>For other faculties, change the text below.</description>
-      <default>Faculty of Computer and Informatics</default>
+      <title i18n:translate="">Faculty</title>
+      <description i18n:translate="">For other faculties, change the text below.</description>
+      <default i18n:translate="">Faculty of Computer and Informatics</default>
     </field>
     <field name="department" type="zope.schema.Choice">
-      <title>Department</title>
+      <title i18n:translate="">Department</title>
       <description/>
       <values>
-        <element>Computer Eng. (100% Eng.)</element>
-        <element>Computer Eng. (30% Eng.)</element>
-        <element>Information Systems Eng. (SUNY)</element>
-        <element>Other (specify below)</element>
+        <element i18n:translate="">Computer Eng. (100% Eng.)</element>
+        <element i18n:translate="">Computer Eng. (30% Eng.)</element>
+        <element i18n:translate="">Information Systems Eng. (SUNY)</element>
+        <element i18n:translate="">Other (specify below)</element>
       </values>
     </field>
     <field name="department_other" type="zope.schema.TextLine">
-      <title>Department (Other)</title>
-      <description>If your department is not listed above, write it here.</description>
+      <title i18n:translate="">Department (Other)</title>
+      <description i18n:translate="">If your department is not listed above, write it here.</description>
       <required>False</required>
     </field>
     <field name="phone" type="zope.schema.TextLine">
-      <title>Contact Phone</title>
-      <description>If you like, you can leave this field blank here and fill it manually on the printed form.</description>
+      <title i18n:translate="">Contact Phone</title>
+      <description i18n:translate="">If you like, you can leave this field blank here and fill it manually on the printed form.</description>
       <required>False</required>
     </field>
     <field name="e_mail" type="zope.schema.TextLine">
-      <title>E-mail address</title>
+      <title i18n:translate="">E-mail address</title>
       <description/>
       <required>False</required>
     </field>
     <field name="submission_date" type="zope.schema.Date">
-      <title>Date</title>
+      <title i18n:translate="">Date</title>
       <description/>
     </field>
     <field name="course_prefix" type="zope.schema.Choice">
-      <title>Course Code Prefix</title>
-      <description>The course group part of the course code. For example, if the course code is "BLG123", select "BLG" here. IF THE COURSE CODE PREFIX IS NOT LISTED BELOW, YOU ONLY HAVE TO HAND IN THE PRINTED FORM, YOU DON'T NEED TO SUBMIT THIS FORM.</description>
+      <title i18n:translate="">Course Code Prefix</title>
+      <description i18n:translate="">The course group part of the course code. For example, if the course code is "BLG123", select "BLG" here. IF THE COURSE CODE PREFIX IS NOT LISTED BELOW, YOU ONLY HAVE TO HAND IN THE PRINTED FORM, YOU DON'T NEED TO SUBMIT THIS FORM.</description>
       <values>
         <element>BLG</element>
         <element>ISE</element>
@@ -62,27 +63,27 @@
       </values>
     </field>
     <field name="course_no" type="zope.schema.TextLine">
-      <title>Course Code No</title>
-      <description>The course number part of the course code. For example, if the course code is "BLG123", type "123" here.</description>
+      <title i18n:translate="">Course Code No</title>
+      <description i18n:translate="">The course number part of the course code. For example, if the course code is "BLG123", type "123" here.</description>
       <min_length>3</min_length>
       <max_length>6</max_length>
     </field>
     <field name="course_title" type="zope.schema.TextLine">
-      <title>Course Title</title>
+      <title i18n:translate="">Course Title</title>
       <description/>
     </field>
     <field name="week_slot" type="zope.schema.TextLine">
-      <title>Course Time Slot</title>
-      <description>The day of the week and the hours of the course.</description>
+      <title i18n:translate="">Course Time Slot</title>
+      <description i18n:translate="">The day of the week and the hours of the course.</description>
     </field>
     <field name="alternative" type="zope.schema.TextLine">
-      <title>Alternative Course</title>
-      <description>The code, title and time slot of an alternative course that you can take. This will be considered only if the request for the first course is not accepted.</description>
+      <title i18n:translate="">Alternative Course</title>
+      <description i18n:translate="">The code, title and time slot of an alternative course that you can take. This will be considered only if the request for the first course is not accepted.</description>
       <required>False</required>
     </field>
     <field name="explanation" type="zope.schema.Text">
-      <title>Explanation</title>
-      <description>Explain why you need to enroll in this course.</description>
+      <title i18n:translate="">Explanation</title>
+      <description i18n:translate="">Explain why you need to enroll in this course.</description>
     </field>
   </schema>
 </model>
