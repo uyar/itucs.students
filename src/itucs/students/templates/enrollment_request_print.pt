@@ -111,7 +111,7 @@
                 <td tal:content="context/week_slot">Monday 09:30-12:30</td>
             </tr>
             <tr>
-                <th>Code, Title and Time Slot for Alternative Course::<br />
+                <th>Code, Title and Time Slot for Alternative Course:<br />
                     <span style="font-weight: normal; font-size: 80%;">This will be considered only if the request for the first course is not accepted.</span></th>
                 <td tal:content="context/alternative">BIL108 Matlab Monday 09:30-12:30</td>
             </tr>
@@ -129,15 +129,5 @@
                 <td class="evaluation"></td>
             </tr>
         </table>
-
-        <h2 class="petition">Notlar</h2>
-        <ol>
-          <li>İmzasız ve eksik bilgili dilekçeler <strong>GEÇERSİZDİR</strong>.</li>
-          <li>Kaydolunmak istenilen her ders için <strong>AYRI DİLEKÇE</strong> düzenlenmelidir.</li>
-          <li>Dilekçe ile başvuruda bulunmadan önce <a href="http://www.sis.itu.edu.tr/">http://www.sis.itu.edu.tr/</a> adresindeki duyuruları ve yönetmelikleri mutlaka okuyunuz. Kurallara aykırı talepler değerlendirilmeye alınmayacaktır.</li>
-          <li>Fakülte web sayfasında duyurulan başvuru koşullarını mutlaka okuyunuz. Kurallara aykırı talepler değerlendirilmeye alınmayacaktır. <a href="http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi">http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi</a></li>
-          <li>Derslerin kontenjanlarını belli bir sayının üstüne çıkarmak fiziksel olarak mümkün olmadığından başvuru koşulları sağlansa da her dilekçeyi kabul etmek mümkün olmamaktadır. Bu nedenle <strong>öğrencilerin öncelikle programlarını uygun dersleri alabilecek şekilde düzenlemeleri önerilir</strong>.</li>
-        </ol>
-
 </body>
 </html>
