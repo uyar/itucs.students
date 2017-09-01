@@ -52,7 +52,7 @@
 
   <subscriber
       for=".content.EnrollmentRequest
-           zope.lifecycleevent.interfaces.IObjectAddedEvent"
+           zope.lifecycleevent.interfaces.IObjectCreatedEvent"
       handler=".content.updateTitle"
       />
 
