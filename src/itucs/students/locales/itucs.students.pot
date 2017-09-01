@@ -1,0 +1,254 @@
+# Message catalog for the itucs.students package.
+# H. Turgut Uyar <uyar@itu.edu.tr>, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: itucs.students 1.0\n"
+"POT-Creation-Date: 2017-09-01 18:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: itucs.students\n"
+
+#: ./templates/enrollment_request_view.pt:149
+msgid "A <strong>SEPARATE FORM</strong> must be filled out and handed in for each course the student wants to be enrolled at."
+msgstr ""
+
+#: ./templates/enrollment_request_view.pt:151
+msgid "Also make sure to read the application rules on the faculty web page <a href=\"http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi\">http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi</a>. The requests that fail to follow the rules will not be evaluated."
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "Alternative Course"
+msgstr ""
+
+#: ./templates/enrollment_request_view.pt:150
+msgid "Before applying for course enrollment, make sure that you have carefully read the announcements and guidelines on the <a href=\"http://www.sis.itu.edu.tr/\">http://www.sis.itu.edu.tr/</a> site. The requests that fail to follow the rules will not be evaluated."
+msgstr ""
+
+#: ./templates/enrollment_request_print.pt:126
+#: ./templates/enrollment_request_view.pt:126
+msgid "Code, Title and Time Slot for Alternative Course"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "Computer Eng. (100% Eng.)"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "Computer Eng. (30% Eng.)"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+#: ./templates/enrollment_request_print.pt:99
+#: ./templates/enrollment_request_view.pt:99
+msgid "Contact Phone"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "Course Code No"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "Course Code Prefix"
+msgstr ""
+
+#: ./templates/enrollment_request_print.pt:118
+#: ./templates/enrollment_request_view.pt:118
+msgid "Course Code and Title"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+#: ./templates/enrollment_request_print.pt:122
+#: ./templates/enrollment_request_view.pt:122
+msgid "Course Time Slot"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "Course Title"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+#: ./templates/enrollment_request_print.pt:107
+#: ./templates/enrollment_request_view.pt:107
+msgid "Date"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+#: ./templates/enrollment_request_print.pt:95
+#: ./templates/enrollment_request_view.pt:95
+msgid "Department"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "Department (Other)"
+msgstr ""
+
+#: ./templates/enrollment_request_print.pt:103
+#: ./templates/enrollment_request_view.pt:103
+msgid "E-mail"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "E-mail address"
+msgstr ""
+
+#: ./templates/enrollment_request_view.pt:135
+msgid "EVALUATION<br /> (TO BE FILLED OUT BY THE FACULTY REVIEWERS)"
+msgstr ""
+
+#: ./profiles/default/types/Enrollment_Request.xml
+msgid "Enrollment Request"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "Explain why you need to enroll in this course."
+msgstr ""
+
+#: ./models/enrollment_request.xml
+#: ./templates/enrollment_request_print.pt:131
+#: ./templates/enrollment_request_view.pt:131
+msgid "Explanation"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+#: ./templates/enrollment_request_print.pt:91
+#: ./templates/enrollment_request_view.pt:91
+msgid "Faculty"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "Faculty of Computer and Informatics"
+msgstr ""
+
+#: ./templates/enrollment_request_print.pt:140
+#: ./templates/enrollment_request_view.pt:141
+msgid "Faculty/Department Evaluation"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "For other faculties, change the text below."
+msgstr ""
+
+#: ./models/enrollment_request.xml
+#: ./templates/enrollment_request_print.pt:87
+#: ./templates/enrollment_request_view.pt:87
+msgid "Full Name"
+msgstr ""
+
+#: ./templates/enrollment_request_view.pt:67
+msgid "I failed to get enrolled at the following course due to the reasons explained below.<br /> My case meets the application requirements announced on the faculty web page.<br /> I respectfully request the necessary actions to be taken for me to be registered at this course."
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "If you like, you can leave this field blank here and fill it manually on the printed form."
+msgstr ""
+
+#: ./templates/enrollment_request_view.pt:155
+msgid "If you would like to make changes on the form, select the \"Edit\" action on the black sidebar. While logged in, you can see your request forms by clicking on the link for the \"Requests\" folder."
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "If your department is not listed above, write it here."
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "Information Systems Eng. (SUNY)"
+msgstr ""
+
+#: ./configure.zcml:21
+msgid "Installs the itucs.students add-on."
+msgstr ""
+
+#: ./templates/enrollment_request_view.pt:146
+msgid "Notes"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "Other (specify below)"
+msgstr ""
+
+#: ./templates/enrollment_request_print.pt:52
+#: ./templates/enrollment_request_view.pt:52
+msgid "Please check the form thoroughly to make sure that the information is correct. Click on the \"printable page\" button at the end of the form and print that page. SIGN THE PRINTED FORM AND HAND IT IN TO THE STUDENTS AFFAIRS OFFICE. ONLY ELECTRONICALLY SUBMITTED FORMS ARE NOT SUFFICIENT FOR EVALUATION."
+msgstr ""
+
+#: ./templates/enrollment_request_view.pt:159
+msgid "Printable page"
+msgstr ""
+
+#: ./profiles/default/types/Enrollment_Request.xml
+msgid "Request form for students to enroll in fully-booked courses. After this form is filled out through the web site, it has to be printed out, signed and handed in within the announced time frame at the Students Affairs Office of the Faculty of Computer and Informatics, along with the student's transcript and weekly course schedule."
+msgstr ""
+
+#: ./templates/enrollment_request_view.pt:148
+msgid "Request forms which are unsigned or which have missing information <strong>WILL NOT BE EVALUATED</strong>."
+msgstr ""
+
+#: ./templates/enrollment_request_print.pt:80
+#: ./templates/enrollment_request_view.pt:80
+msgid "STUDENT INFORMATION"
+msgstr ""
+
+#: ./templates/enrollment_request_print.pt:111
+#: ./templates/enrollment_request_view.pt:111
+msgid "Signature"
+msgstr ""
+
+#: ./templates/enrollment_request_view.pt:152
+msgid "Since it's physically not possible to increase the number of students enrolled in a course, not every enrollment request can be accepted even if the application rules are met. Therefore, <strong>students are advised to arrange their schedule so that they can take the available courses.</strong>."
+msgstr ""
+
+#: ./models/enrollment_request.xml
+#: ./templates/enrollment_request_print.pt:83
+#: ./templates/enrollment_request_view.pt:83
+msgid "Student No"
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "The code, title and time slot of an alternative course that you can take. This will be considered only if the request for the first course is not accepted."
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "The course group part of the course code. For example, if the course code is \"BLG123\", select \"BLG\" here. IF THE COURSE CODE PREFIX IS NOT LISTED BELOW, YOU ONLY HAVE TO HAND IN THE PRINTED FORM, YOU DON'T NEED TO SUBMIT THIS FORM."
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "The course number part of the course code. For example, if the course code is \"BLG123\", type \"123\" here."
+msgstr ""
+
+#: ./models/enrollment_request.xml
+msgid "The day of the week and the hours of the course."
+msgstr ""
+
+#: ./templates/enrollment_request_view.pt:127
+msgid "This will be considered only if the request for the first course is not accepted."
+msgstr ""
+
+#: ./templates/enrollment_request_print.pt:63
+#: ./templates/enrollment_request_view.pt:63
+msgid "To the Faculty of Computer and Informatics,"
+msgstr ""
+
+#: ./configure.zcml:30
+msgid "Uninstalls the itucs.students add-on."
+msgstr ""
+
+#. Default: "View"
+#: ./profiles/default/types/Enrollment_Request.xml
+msgid "description"
+msgstr ""
+
+#: ./configure.zcml:21
+msgid "itucs.students"
+msgstr ""
+
+#: ./configure.zcml:30
+msgid "itucs.students (uninstall)"
+msgstr ""
