@@ -49,8 +49,8 @@
 
 <metal:main fill-slot="main">
     <tal:main-macro metal:define-macro="main">
-        <div class="alert">
-            Lütfen formu dikkatlice kontrol ederek bilgilerin doğruluğundan emin olduktan sonra en alttaki "Basılabilir belge" bağlantısını izleyin ve gelen sayfanın çıktısını alın. BU ÇIKTIYI İMZALAYARAK İSTENEN EKLERLE BİRLİKTE ÖĞRENCİ İŞLERİ'NE TESLİM ETMENİZ GEREKMEKTEDİR, YALNIZCA ELEKTRONİK OLARAK DOLDURULAN FORMLAR BAŞVURU İÇİN YETERLİ DEĞİLDİR.
+        <div class="alert" i18n:translate="">
+            Please check the form thoroughly to make sure that the provided information is correct. Click the "printable page" button at the bottom of the form and print out the displayed page. SIGN THE PRINTED FORM AND HAND IT IN AT THE STUDENTS AFFAIRS OFFICE. FORMS THAT ARE SUBMITTED ONLY ELECTRONICALLY ARE NOT SUFFICIENT FOR EVALUATION.
         </div>
 
         <div style="float: right;">
@@ -60,102 +60,103 @@
                  style="width: 78px; height: 106px;" />
         </div>
 
-        <h1 class="petition">
-            İTÜ Bilgisayar ve Bilişim Fakültesi Dekanlığına,
+        <h1 class="petition" i18n:translate="">
+            To the Faculty of Computer and Informatics,
         </h1>
 
-        <p style="line-height: 120%;">
-            Aşağıda ayrıntılı bilgileri verilen derse, belirttiğim nedenden dolayı kayıt olamadım.<br />
-            Fakülte web sayfasında duyurulan başvuru koşullarını sağlıyorum.<br />
-            Bu derse kaydedilebilmem için gerekenin yapılmasını saygılarımla arz ederim.
+        <p style="line-height: 120%;" i18n:translate="">
+            I failed to get enrolled at the following course due to the reasons explained below.<br />
+            My case meets the application requirements announced on the faculty web page.<br />
+            I respectfully ask that the necessary actions are taken for me to be registered at this course.
         </p>
 
         <p style="margin-bottom: 2em;">
-          Ek1. Not döküm belgesi (transkript)<br /> 
-          Ek2. Haftalık ders çizelgesi
+          Attachment 1. Transkript<br /> 
+          Attachment 2. Weekly course schedule
         </p>
 
         <table class="petition">
             <tr class="heading">
-                <td colspan="2">STUDENT INFORMATION</td>
+                <td colspan="2" i18n:translate="">STUDENT INFORMATION</td>
             </tr>
             <tr>
-                <th>Student No:</th>
+                <th><span i18n:translate="" tal:omit-tag="">Student No</span>:</th>
                 <td tal:content="context/student_no">150160001</td>
             </tr>
             <tr>
-                <th>Full Name:</th>
+                <th><span i18n:translate="" tal:omit-tag="">Full Name</span>:</th>
                 <td tal:content="context/full_name">Alan Turing</td>
             </tr>
             <tr>
-                <th>Faculty:</th>
+                <th><span i18n:translate="" tal:omit-tag="">Faculty</span>:</th>
                 <td tal:content="context/faculty">Computer and Informatics</td>
             </tr>
             <tr>
-                <th>Department:</th>
+                <th><span i18n:translate="" tal:omit-tag="">Department</span>:</th>
                 <td tal:content="python: context.department_other or context.department">Computer Eng.</td>
             </tr>
             <tr>
-                <th>Contact Phone:</th>
+                <th><span i18n:translate="" tal:omit-tag="">Contact Phone</span>:</th>
                 <td tal:content="context/phone">0555 1234567</td>
             </tr>
             <tr>
-                <th>E-mail:</th>
+                <th><span i18n:translate="" tal:omit-tag="">E-mail</span>:</th>
                 <td tal:content="context/e_mail">turing@itu.edu.tr</td>
             </tr>
             <tr>
-                <th>Date:</th>
+                <th><span i18n:translate="" tal:omit-tag="">Date</span>:</th>
                 <td tal:content="python:context.submission_date">1970-01-01</td>
             </tr>
             <tr>
-                <th>Signature:</th>
+                <th><span i18n:translate="" tal:omit-tag="">Signature</span>:</th>
                 <td class="signature"></td>
             </tr>
             <tr class="heading">
                 <td colspan="2">COURSE INFORMATION</td>
             </tr>
             <tr>
-                <th>Course Code and Title:</th>
+                <th><span i18n:translate="" tal:omit-tag="">Course Code and Title</span>:</th>
                 <td tal:content="python: context.course_prefix + context.course_no + ' - ' + context.course_title">BIL105 - C</td>
             </tr>
             <tr>
-                <th>Course Time Slot:</th>
+                <th><span i18n:translate="" tal:omit-tag="">Course Time Slot</span>:</th>
                 <td tal:content="context/week_slot">Monday 09:30-12:30</td>
             </tr>
             <tr>
-                <th>Code, Title and Time Slot for Alternative Course:<br />
-                    <span style="font-weight: normal; font-size: 80%;">This will be considered only if the request for the first course is not accepted.</span></th>
+                <th><span i18n:translate="" tal:omit-tag="">Code, Title and Time Slot for Alternative Course</span>:<br />
+                    <span style="font-weight: normal; font-size: 80%;" i18n:translate="">This will be considered only if the request for the first course is not accepted.</span></th>
                 <td tal:content="context/alternative">BIL108 Matlab Monday 09:30-12:30</td>
             </tr>
             <tr>
-                <th>Explanation:</th>
-                <td class="explanation" tal:content="context/explanation">Martyrdom</td>
+                <th><span i18n:translate="" tal:omit-tag="">Explanation</span>:</th>
+                <td class="explanation" tal:content="context/explanation">Life is unfair.</td>
             </tr>
             <tr class="heading">
-                <td colspan="2">
+                <td colspan="2" i18n:translate="">
                     EVALUATION<br />
-                    (TO BE FILLED OUT BY THE FACULTY)</td>
+                    (TO BE FILLED OUT BY THE FACULTY REVIEWERS)
+                </td>
             </tr>
             <tr>
-                <th>Faculty/Department Evaluation:</th>
+                <th><span i18n:translate="" tal:omit-tag="">Faculty/Department Evaluation</span>:</th>
                 <td class="evaluation"></td>
             </tr>
         </table>
 
-        <h2 class="petition">Notlar</h2>
+        <h2 class="petition" i18n:translate="">Notes</h2>
         <ol>
-          <li>İmzasız ve eksik bilgili dilekçeler <strong>GEÇERSİZDİR</strong>.</li>
-          <li>Kaydolunmak istenilen her ders için <strong>AYRI DİLEKÇE</strong> düzenlenmelidir.</li>
-          <li>Dilekçe ile başvuruda bulunmadan önce <a href="http://www.sis.itu.edu.tr/">http://www.sis.itu.edu.tr/</a> adresindeki duyuruları ve yönetmelikleri mutlaka okuyunuz. Kurallara aykırı talepler değerlendirilmeye alınmayacaktır.</li>
-          <li>Fakülte web sayfasında duyurulan başvuru koşullarını mutlaka okuyunuz. Kurallara aykırı talepler değerlendirilmeye alınmayacaktır. <a href="http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi">http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi</a></li>
-          <li>Derslerin kontenjanlarını belli bir sayının üstüne çıkarmak fiziksel olarak mümkün olmadığından başvuru koşulları sağlansa da her dilekçeyi kabul etmek mümkün olmamaktadır. Bu nedenle <strong>öğrencilerin öncelikle programlarını uygun dersleri alabilecek şekilde düzenlemeleri önerilir</strong>.</li>
+          <li i18n:translate="">Request forms which are unsigned or which have missing information <strong>WILL NOT BE EVALUATED</strong>.</li>
+          <li i18n:translate="">A <strong>SEPARATE FORM</strong> must be filled out and handed in for each course the student wants to be enrolled at.</li>
+          <li i18n:translate="">Before applying for course enrollment, make sure that you have carefully read the announcements and guidelines on the <a href="http://www.sis.itu.edu.tr/">http://www.sis.itu.edu.tr/</a> site. The requests that fail to follow the rules will not be evaluated.</li>
+          <li i18n:translate="">Also make sure to read the application rules on the faculty web page <a href="http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi">http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi</a>. The requests that fail to follow the rules will not be evaluated.</li>
+          <li i18n:translate="">Since it's physically not possible to increase the number of students enrolled in a course, not every enrollment request can be accepted even if the application rules are met. Therefore, <strong>students are advised to arrange their schedule so that they can take the available courses.</strong>.</li>
         </ol>
 
-        <div class="alert">
-            Formdaki bilgilerde değişiklik yapmak isterseniz yukarıdaki yeşil çubuktan "Düzenle" işlemini seçebilirsiniz. Siteye girmiş durumdayken "Dilekçeler" klasörüne baktığınızda kendi dilekçelerinizi görebilirsiniz.
+        <div class="alert" i18n:translate="">
+            If you would like to make changes on the form, select the "Edit" action on the black sidebar. While logged in, you can see your request forms by clicking on the link for the "Requests" folder.
         </div>
 
-        <button tal:attributes="onclick python:'window.open(\'' + context.id + '/printable_view\', \'blank\', \'width=1000px,menubar=yes\')'">Printable page</button>
+        <button tal:attributes="onclick python:'window.open(\'' + context.id + '/printable_view\', \'blank\', \'width=1000px,menubar=yes\')'" i18n:translate="">Printable page</button>
     </tal:main-macro>
 </metal:main>
 

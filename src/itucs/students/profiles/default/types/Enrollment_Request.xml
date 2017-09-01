@@ -11,7 +11,7 @@
       name="title">Enrollment Request</property>
   <property
       i18n:translate=""
-      name="description">Request form for students to enroll in fully-booked courses.</property>
+      name="description">Request form for students to enroll in fully-booked courses. After this form is filled out through the web site, it has to be printed out, signed and handed in within the announced time frame at the Students Affairs Office of the Faculty of Computer and Informatics, along with the student's transcript and weekly course schedule.</property>
 
   <property name="allow_discussion">False</property>
   <property name="factory">Enrollment_Request</property>
@@ -69,7 +69,7 @@
       action_id="view"
       category="object"
       condition_expr=""
-      description=""
+      description="View the request"
       i18n:attributes="title description"
       title="View"
       url_expr="string:${object_url}"
@@ -80,7 +80,7 @@
       action_id="edit"
       category="object"
       condition_expr=""
-      description=""
+      description="Edit the request"
       i18n:attributes="title description"
       title="Edit"
       url_expr="string:${object_url}/edit"
