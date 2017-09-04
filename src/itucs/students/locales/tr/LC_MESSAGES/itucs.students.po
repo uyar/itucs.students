@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: itucs.students 1.0\n"
 "POT-Creation-Date: 2017-09-04 16:06+0000\n"
-"PO-Revision-Date: 2017-09-04 18:13+0300\n"
+"PO-Revision-Date: 2017-09-04 23:44+0300\n"
 "Last-Translator: H. Turgut Uyar <uyar@itu.edu.tr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -51,7 +51,7 @@ msgstr "Bilgisayar Müh. (%100 İng.)"
 
 #: ./models/enrollment_request.xml
 msgid "Computer Eng. (30% Eng.)"
-msgstr "Bilgisayar Müh. (%30% İng.)"
+msgstr "Bilgisayar Müh. (%30 İng.)"
 
 #: ./models/enrollment_request.xml
 #: ./templates/enrollment_request_print.pt:94
