@@ -1,0 +1,40 @@
+<html
+    lang="en"
+    metal:use-macro="context/main_template/macros/master"
+    xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="itucs.students">
+
+<body>
+
+<metal:content-core fill-slot="content-core">
+    <metal:content-core define-macro="content-core">
+
+      <table class="listing">
+          <thead>
+              <tr>
+                  <th i18n:translate="">Student No</th>
+                  <th i18n:translate="">Full Name</th>
+                  <th i18n:translate="">Course Code</th>
+                  <th i18n:translate="">Course Title</th>
+                  <th i18n:translate="">Last Modified</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr tal:repeat="s python:context.listFolderContents(contentFilter={'portal_type': 'Enrollment_Request'})">
+                <td><a tal:attributes="href s/absolute_url" tal:content="s/student_no">150150123</a></td>
+                <td tal:content="s/full_name">Alan Turing</td>
+                <td tal:content="python: s.course_prefix + s.course_no">BLG101</td>
+                <td tal:content="s/course_title">Introduction to CS</td>
+                <td tal:content="s/modified">now</td>
+              </tr>
+          </tbody>
+      </table>
+      <button tal:attributes="onclick string:window.open('enrollment_requests_csv', 'blank', 'width=1000px,menubar=yes');">CSV</button>
+    </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
