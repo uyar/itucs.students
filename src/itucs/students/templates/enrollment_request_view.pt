@@ -1,10 +1,11 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
-      xmlns:tal="http://xml.zope.org/namespaces/tal"
-      xmlns:metal="http://xml.zope.org/namespaces/metal"
-      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      lang="en"
-      metal:use-macro="context/main_template/macros/master"
-      i18n:domain="itucs.students">
+<html
+    lang="en"
+    metal:use-macro="context/main_template/macros/master"
+    xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="itucs.students">
 
 <metal:css fill-slot="style_slot">
     <style type="text/css">
@@ -67,11 +68,11 @@
         <p style="line-height: 120%;" i18n:translate="">
             I failed to get enrolled at the following course due to the reasons explained below.<br />
             My case meets the application requirements announced on the faculty web page.<br />
-            I respectfully ask that the necessary actions are taken for me to be registered at this course.
+            I ask that the necessary actions are taken for me to be registered at this course.
         </p>
 
-        <p style="margin-bottom: 2em;">
-          Attachment 1. Transkript<br /> 
+        <p style="margin-bottom: 2em;" i18n:translate="">
+          Attachment 1. Transcript<br /> 
           Attachment 2. Weekly course schedule
         </p>
 
@@ -100,7 +101,7 @@
                 <td tal:content="context/phone">0555 1234567</td>
             </tr>
             <tr>
-                <th><span i18n:translate="" tal:omit-tag="">E-mail</span>:</th>
+                <th><span i18n:translate="" tal:omit-tag="">E-mail Address</span>:</th>
                 <td tal:content="context/e_mail">turing@itu.edu.tr</td>
             </tr>
             <tr>
@@ -112,7 +113,7 @@
                 <td class="signature"></td>
             </tr>
             <tr class="heading">
-                <td colspan="2">COURSE INFORMATION</td>
+                <td colspan="2" i18n:translate="">COURSE INFORMATION</td>
             </tr>
             <tr>
                 <th><span i18n:translate="" tal:omit-tag="">Course Code and Title</span>:</th>

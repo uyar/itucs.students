@@ -1,9 +1,10 @@
-<model xmlns:form="http://namespaces.plone.org/supermodel/form"
-       xmlns:security="http://namespaces.plone.org/supermodel/security"
-       xmlns:marshal="http://namespaces.plone.org/supermodel/marshal"
-       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-       i18n:domain="itucs.students"
-       xmlns="http://namespaces.plone.org/supermodel/schema">
+<model
+     xmlns="http://namespaces.plone.org/supermodel/schema"
+     xmlns:form="http://namespaces.plone.org/supermodel/form"
+     xmlns:security="http://namespaces.plone.org/supermodel/security"
+     xmlns:marshal="http://namespaces.plone.org/supermodel/marshal"
+     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     i18n:domain="itucs.students">
   <schema>
     <field name="student_no" type="zope.schema.TextLine">
       <title i18n:translate="">Student No</title>
@@ -41,7 +42,7 @@
       <required>False</required>
     </field>
     <field name="e_mail" type="zope.schema.TextLine">
-      <title i18n:translate="">E-mail address</title>
+      <title i18n:translate="">E-mail Address</title>
       <description/>
       <required>False</required>
     </field>
