@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<object name="portal_workflow" meta_type="Plone Workflow Tool">
+ <object name="enrollment_request_workflow" meta_type="Workflow"/>
+ <bindings>
+  <type type_id="Enrollment_Request">
+   <bound-workflow workflow_id="enrollment_request_workflow"/>
+  </type>
+ </bindings>
+</object>
