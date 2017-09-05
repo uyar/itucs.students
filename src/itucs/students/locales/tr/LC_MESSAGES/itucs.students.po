@@ -29,7 +29,7 @@ msgstr "İkinci Seçenek"
 #: ./templates/enrollment_request_print.pt:68
 #: ./templates/enrollment_request_view.pt:74
 msgid "Attachment 1. Transcript<br /> Attachment 2. Weekly course schedule"
-msgstr "Ek1. Not döküm belgesi (transkript)<br /> Ek2. Haftalık ders çizelgesi"
+msgstr "Ek 1. Not döküm belgesi (transkript)<br /> Ek 2. Haftalık ders çizelgesi"
 
 #: ./templates/enrollment_request_view.pt:151
 msgid "Before applying for course enrollment, make sure that you have carefully read the announcements and guidelines on the <a href=\"http://www.sis.itu.edu.tr/\">http://www.sis.itu.edu.tr/</a> site. The requests that fail to follow the rules will not be evaluated."
