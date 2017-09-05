@@ -8,7 +8,7 @@ class EnrollmentRequest(Item):
 
     def __init__(self, *args, **kwargs):
         super(EnrollmentRequest, self).__init__(*args, **kwargs)
-        self.manage_setLocalRoles('uyar', ['Reader', 'Reviewer'])
+        self.manage_setLocalRoles('bb-idari-ogrenci-isleri', ['Reader', 'Reviewer'])
 
 
 def updateTitle(enrollment_request, event):
