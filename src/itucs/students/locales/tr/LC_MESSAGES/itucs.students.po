@@ -19,8 +19,8 @@ msgid "A <strong>SEPARATE FORM</strong> must be filled out and handed in for eac
 msgstr "Kaydolunmak istenilen her ders için <strong>AYRI DİLEKÇE</strong> düzenlenmelidir."
 
 #: ./templates/enrollment_request_view.pt:152
-msgid "Also make sure to read the application rules on the faculty web page <a href=\"http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi\">http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi</a>. The requests that fail to follow the rules will not be evaluated."
-msgstr "Fakülte web sayfasında duyurulan başvuru koşullarını mutlaka okuyunuz. Kurallara aykırı talepler değerlendirilmeye alınmayacaktır. <a href=\"http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi\">http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi</a>"
+msgid "Also make sure to read the application rules on the faculty web page <a href=\"http://portal.cs.itu.edu.tr/en/students/enrollment-requests\">http://portal.cs.itu.edu.tr/en/students/enrollment-requests</a>. The requests that fail to follow the rules will not be evaluated."
+msgstr "Fakülte web sayfasında duyurulan başvuru koşullarını mutlaka okuyunuz. Kurallara aykırı talepler değerlendirilmeye alınmayacaktır. <a href=\"http://portal.cs.itu.edu.tr/tr/ogrenciler/kontenjan-artimi\">http://portal.cs.itu.edu.tr/tr/ogrenciler/kontenjan-artimi</a>"
 
 #: ./models/enrollment_request.xml
 msgid "Alternative Course"

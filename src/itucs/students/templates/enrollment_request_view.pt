@@ -149,7 +149,7 @@
           <li i18n:translate="">Request forms which are unsigned or which have missing information <strong>WILL NOT BE EVALUATED</strong>.</li>
           <li i18n:translate="">A <strong>SEPARATE FORM</strong> must be filled out and handed in for each course the student wants to be enrolled at.</li>
           <li i18n:translate="">Before applying for course enrollment, make sure that you have carefully read the announcements and guidelines on the <a href="http://www.sis.itu.edu.tr/">http://www.sis.itu.edu.tr/</a> site. The requests that fail to follow the rules will not be evaluated.</li>
-          <li i18n:translate="">Also make sure to read the application rules on the faculty web page <a href="http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi">http://portal.cs.itu.edu.tr/ogrenciler/kontenjan-artimi</a>. The requests that fail to follow the rules will not be evaluated.</li>
+          <li i18n:translate="">Also make sure to read the application rules on the faculty web page <a href="http://portal.cs.itu.edu.tr/en/students/enrollment-requests">http://portal.cs.itu.edu.tr/en/students/enrollment-requests</a>. The requests that fail to follow the rules will not be evaluated.</li>
           <li i18n:translate="">Since it's physically not possible to increase the number of students enrolled in a course, not every enrollment request can be accepted even if the application rules are met. Therefore, <strong>students are advised to arrange their schedule so that they can take the available courses.</strong>.</li>
         </ol>
 
