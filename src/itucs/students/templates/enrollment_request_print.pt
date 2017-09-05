@@ -30,6 +30,7 @@
         table.petition td, table.petition th {
             border: thin solid black;
             padding: 0.4em;
+            text-align: left;
             vertical-align: top;
         }
         table.petition th {
