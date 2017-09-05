@@ -10,7 +10,7 @@ class EnrollmentRequest(Item):
     def __init__(self, *args, **kwargs):
         super(EnrollmentRequest, self).__init__(*args, **kwargs)
         user = api.user.get_current()
-        self.manage_setLocalRoles(user.getProperty('username'), ['Reader', 'Editor'])
+        self.manage_setLocalRoles(user.id, ['Reader', 'Editor'])
         self.manage_setLocalRoles('bb-idari-ogrenci-isleri', ['Reader', 'Reviewer'])
 
 
