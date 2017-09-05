@@ -1,4 +1,5 @@
 from Products.Five import BrowserView
+from plone import api
 from plone.dexterity.content import Item
 
 
@@ -8,6 +9,8 @@ class EnrollmentRequest(Item):
 
     def __init__(self, *args, **kwargs):
         super(EnrollmentRequest, self).__init__(*args, **kwargs)
+        user = api.user.get_current()
+        self.manage_setLocalRoles(user.getProperty('username'), ['Reader', 'Editor'])
         self.manage_setLocalRoles('bb-idari-ogrenci-isleri', ['Reader', 'Reviewer'])
 
 
