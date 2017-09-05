@@ -24,6 +24,8 @@
         }
         table.petition tr.heading {
             background-color: #D0D0D0;
+        }
+        table.petition tr.heading td {
             font-weight: bold;
             text-align: center;
         }
