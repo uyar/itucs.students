@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: itucs.students 1.0\n"
-"POT-Creation-Date: 2017-09-05 13:37+0000\n"
-"PO-Revision-Date: 2017-09-04 23:44+0300\n"
+"POT-Creation-Date: 2017-09-11 14:03+0000\n"
+"PO-Revision-Date: 2017-09-11 17:04+0300\n"
 "Last-Translator: H. Turgut Uyar <uyar@itu.edu.tr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -59,6 +59,11 @@ msgstr "Bilgisayar Müh. (%30 İng.)"
 msgid "Contact Phone"
 msgstr "İletişim Telefonu"
 
+#: ./templates/requests_by_course.pt:19
+#: ./templates/requests_by_student.pt:21
+msgid "Course Code"
+msgstr "Ders Kodu"
+
 #: ./models/enrollment_request.xml
 msgid "Course Code No"
 msgstr "Dersin Kod Numarası"
@@ -79,6 +84,8 @@ msgid "Course Time Slot"
 msgstr "Dersin Zaman Dilimi"
 
 #: ./models/enrollment_request.xml
+#: ./templates/requests_by_course.pt:20
+#: ./templates/requests_by_student.pt:22
 msgid "Course Title"
 msgstr "Dersin Adı"
 
@@ -172,6 +179,11 @@ msgstr "Bilişim Sistemleri Müh. (SUNY)"
 #: ./configure.zcml:21
 msgid "Installs the itucs.students add-on."
 msgstr ""
+
+#: ./templates/requests_by_course.pt:23
+#: ./templates/requests_by_student.pt:23
+msgid "Last Modified"
+msgstr "Son Değişiklik"
 
 #: ./templates/enrollment_request_view.pt:150
 msgid "Notes"
