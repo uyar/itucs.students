@@ -13,6 +13,22 @@ class EnrollmentRequest(Item):
         self.manage_setLocalRoles(user.id, ['Reader', 'Editor'])
         self.manage_setLocalRoles('bb-idari-ogrenci-isleri', ['Reader', 'Reviewer'])
 
+    def csv(self):
+        return u",".join(u'"' + s + u'"' for s in [
+            self.student_no or u'',
+            self.full_name or u'',
+            self.faculty or u'',
+            self.department or u'',
+            self.department_other or u'',
+            self.phone or u'',
+            self.e_mail or u'',
+            str(self.submission_date) or u'',
+            (self.course_prefix + self.course_no) or u'',
+            self.course_title or u'',
+            self.week_slot or u'',
+            self.alternative or u'',
+            self.explanation or u''
+        ])
 
 def updateTitle(enrollment_request, event):
     student_no = enrollment_request.student_no
