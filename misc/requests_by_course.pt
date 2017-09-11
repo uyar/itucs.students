@@ -1,3 +1,4 @@
+<!-- save this file under portal_skins/custom in ZMI -->
 <html
     lang="en"
     metal:use-macro="context/main_template/macros/master"
@@ -15,20 +16,20 @@
       <table class="listing">
           <thead>
               <tr>
-                  <th i18n:translate="">Student No</th>
-                  <th i18n:translate="">Full Name</th>
                   <th i18n:translate="">Course Code</th>
                   <th i18n:translate="">Course Title</th>
+                  <th i18n:translate="">Student No</th>
+                  <th i18n:translate="">Full Name</th>
                   <th i18n:translate="">Last Modified</th>
               </tr>
           </thead>
-          <tbody>
-              <tr tal:repeat="s python:context.listFolderContents(contentFilter={'portal_type': 'Enrollment_Request'})">
-                <td><a tal:attributes="href s/absolute_url" tal:content="s/student_no">150150123</a></td>
-                <td tal:content="s/full_name">Alan Turing</td>
-                <td tal:content="python: s.course_prefix + s.course_no">BLG101</td>
-                <td tal:content="s/course_title">Introduction to CS</td>
-                <td tal:content="s/modified">now</td>
+          <tbody tal:define="rs python:context.listFolderContents(contentFilter={'portal_type': 'Enrollment_Request'})">
+              <tr tal:repeat="r python:sorted(rs, key=lambda x: x.course_prefix+x.course_no)">
+                <td tal:content="python: r.course_prefix + r.course_no">BLG101</td>
+                <td tal:content="r/course_title">Introduction to CS</td>
+                <td><a tal:attributes="href r/absolute_url" tal:content="r/student_no">150150123</a></td>
+                <td tal:content="r/full_name">Alan Turing</td>
+                <td tal:content="r/modified">now</td>
               </tr>
           </tbody>
       </table>
