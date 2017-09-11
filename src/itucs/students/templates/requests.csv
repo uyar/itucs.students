@@ -1,0 +1,24 @@
+request = container.REQUEST
+response = request.response
+
+response.setHeader('Content-Type', 'text/csv')
+print u','.join([
+    u'"' + s + u'"' for s in 
+    u'Student No',
+    u'Full Name',
+    u'Faculty',
+    u'Department',
+    u'Department (Other)',
+    u'Phone',
+    u'E-mail',
+    u'Submission Date',
+    u'Course Code',
+    u'Course Title',
+    u'Week Slot',
+    u'Alternative',
+    u'Explanation'
+])
+
+for r in context.listFolderContents(contentFilter={'portal_type': 'Enrollment_Request'}):
+    print r.csv()
+return printed
