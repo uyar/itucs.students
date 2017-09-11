@@ -1,9 +1,14 @@
+from Products.CMFCore.utils import getToolByName
+
 request = container.REQUEST
 response = request.response
 
 response.setHeader('Content-Type', 'text/csv')
-print u','.join([
-    u'"' + s + u'"' for s in 
+
+workflowTool = getToolByName(context, 'portal_workflow')
+
+print u','.join(u'"' + s + u'"' for s in [
+    u'State',
     u'Student No',
     u'Full Name',
     u'Faculty',
@@ -20,5 +25,7 @@ print u','.join([
 ])
 
 for r in context.listFolderContents(contentFilter={'portal_type': 'Enrollment_Request'}):
-    print r.csv()
+    status = workflowTool.getInfoFor(r, 'review_state')
+    print u'"%s",%s' % (status, r.csv())
+
 return printed
